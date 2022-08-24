@@ -68,6 +68,7 @@
 			min-height: 5rem;
 			padding-bottom: 0.8rem;
 			padding-top: 0.4rem;
+			overflow: hidden;
 		}		
 
 		.custom_cardtext {
@@ -76,7 +77,8 @@
 			white-space: normal;
 			line-height: 0.8;
 			text-decoration: underline;
-			font-weight: 650;			
+			font-weight: 650;	
+			max-height: 100%;			
 		}		
 		
 		.custom_cardtext1 {
@@ -84,6 +86,7 @@
 			text-overflow: clip;
 			white-space: normal;
 			line-height: 0.8;
+			max-height: 100%;
 		}	
 		
 		@media only screen and (max-width:960px){
@@ -113,6 +116,7 @@
 					line-height: 0.8;
 					text-decoration: underline;
 					font-weight: 650;			
+					overflow: hidden;
 				}		
 				
 				.custom_cardtext1 {
@@ -124,7 +128,10 @@
 				
 				.custom_button {
 					width: 15rem;
-					margin-right: 5rem;
+					margin: auto;
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
 				}
 
 				.color_button {
